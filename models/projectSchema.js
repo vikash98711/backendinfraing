@@ -6,6 +6,10 @@ const projectSchema = new Schema(
             type: String,
             required: true,
         },
+        userRole: {
+            type: String,
+            required: true,
+        },
         city: {
             type: String,
             required: true,
@@ -14,10 +18,22 @@ const projectSchema = new Schema(
             type: String,
             required: true,
         },
-        propertyImage: {
+        thumbnail: {
             type: String,
         },
         descriptionImage: {
+            type: String,
+        },
+        propertyImageOne: {
+            type: String,
+        },
+        propertyImageTwo: {
+            type: String,
+        },
+        propertyImageThree: {
+            type: String,
+        },
+        propertyImageFour: {
             type: String,
         },
         category: {

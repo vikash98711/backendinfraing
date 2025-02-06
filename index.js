@@ -9,7 +9,7 @@ import LoginRoutes from "./routes/LoginRoute.js";
 import adminRoutes from "./routes/adminroutes.js"
 import EmployeeRoutes from "./routes/UserRoutes.js";
 import createblogs from './routes/blogRoutes.js';
-import propertyRouter from "./routes/propertyRoutes.js";
+import projectRouter from "./routes/projectRoutes.js";
 
 // import blogRoutes from './routes/blogRoutes.js';
 import Typecategory from './routes/Typeroute.js';
@@ -32,7 +32,7 @@ app.use("/api/", Typecategory);
 app.use("/api/admin/", adminRoutes);
 app.use("/api/", createblogs);
 app.use("/api/userLogin/", LoginRoutes);
-app.use("/api/project/", propertyRouter);
+app.use("/api/project/", projectRouter);
 
 
 
@@ -43,5 +43,3 @@ Connection();
 app.listen(Port, () => {
   console.log(`Server running on port ${Port}`);
 });
-
-// module.exports = app;
